@@ -43,8 +43,19 @@ console.log(str.slice(0, 6).split());
 
 console.log(str.substring(0, 7) + str.substring(11, 18));
 
-// dynamic change first and last capital alpha in string
-
+// dynamic change first and last to lowwerCase in string
+var str1 = "mido anwar by javascript";
 console.log(
-    str.substring(0,1).toLowerCase()+ str.substring(1, str.length - 1).toUpperCase() + str.substring(str.length -1).toLowerCase()
+  str.substring(0, 1).toLowerCase() +
+    str.substring(1, str.length - 1).toUpperCase() +
+    str.substring(str.length - 1).toLowerCase()
 );
+console.log(
+  str1.substring(0, 1).toLowerCase() +
+    str1.substring(1, str1.length - 1).toUpperCase() +
+    str1.substring(str1.length - 1).toLowerCase()
+);
+
+/**
+ *
+ */
