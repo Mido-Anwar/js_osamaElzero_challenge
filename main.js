@@ -4,7 +4,7 @@ var c = 1e2;
 var d = 2.4;
 /**
  * number methods
- * 
+ *
  */
 console.log("______________________ number methods _____________________");
 
@@ -19,16 +19,32 @@ console.log(parseInt(d));
 console.log(Number.parseInt(d));
 ///forth
 
-console.log((Number.parseFloat(a) / Math.ceil(d)*2).toFixed(2));
-console.log(Math.round((Number.parseFloat(a) / Math.ceil(d)*2)));
+console.log(((Number.parseFloat(a) / Math.ceil(d)) * 2).toFixed(2));
+console.log(Math.round((Number.parseFloat(a) / Math.ceil(d)) * 2));
 console.log("______________________ end _____________________");
 /**
  * string methods
  */
 console.log("______________________ string method _____________________");
 
-
+// get zero word with 'z' capital by charAt and slice methods
 var str = "Elzero web school";
-var capitalizedStr = str.charAt(2).toUpperCase()+ str.slice(3,6
-    );
+var capitalizedStr = str.charAt(2).toUpperCase() + str.slice(3, 6);
 console.log(capitalizedStr);
+
+// repeat H 8 times
+var h = "h";
+console.log(h.repeat(8).toLocaleUpperCase());
+
+// get elzero like an array
+console.log(str.slice(0, 6).split());
+
+// remove web word from str var
+
+console.log(str.substring(0, 7) + str.substring(11, 18));
+
+// dynamic change first and last capital alpha in string
+
+console.log(
+    str.substring(0,1).toLowerCase()+ str.substring(1, str.length - 1).toUpperCase() + str.substring(str.length -1).toLowerCase()
+);
