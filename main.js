@@ -55,7 +55,36 @@ console.log(
     str1.substring(1, str1.length - 1).toUpperCase() +
     str1.substring(str1.length - 1).toLowerCase()
 );
-
+console.log("______________________ end _____________________");
 /**
- *
+ * if train
+ */
+/// first challenge;
+console.log("______________________ / if condition_____________________");
+let conNum = 50;
+conNum < 10
+  ? console.log(10)
+  : conNum >= 10 && conNum <= 40
+  ? console.log("10 to 40")
+  : conNum > 40
+  ? console.log("> 40 ")
+  : console.log("unknow");
+///
+
+var st = "Elzero web school";
+console.log(st.replace(" web school","Elzero"));
+//scond challenge
+(st.split('').length * 2).toString() === "34" ? console.log("good"):console.log("bad");
+// third challenge
+st.charAt(st.indexOf("w")) === "w" ? console.log("good"):console.log("bad");
+//forth
+st !==  "string" ? console.log("good"):console.log("bad");
+// fifth
+st.replace("Elzero web school","number") ===  "number" ? console.log("good"):console.log("bad");
+//sixth
+st.replace(" web school","Elzero")==="ElzeroElzero"? console.log("good"):console.log("bad");
+console.log("______________________ end _____________________");
+/**
+ * 
+ * 
  */
