@@ -72,19 +72,68 @@ conNum < 10
 ///
 
 var st = "Elzero web school";
-console.log(st.replace(" web school","Elzero"));
+console.log(st.replace(" web school", "Elzero"));
 //scond challenge
-(st.split('').length * 2).toString() === "34" ? console.log("good"):console.log("bad");
+(st.split("").length * 2).toString() === "34"
+  ? console.log("good")
+  : console.log("bad");
 // third challenge
-st.charAt(st.indexOf("w")) === "w" ? console.log("good"):console.log("bad");
+st.charAt(st.indexOf("w")) === "w" ? console.log("good") : console.log("bad");
 //forth
-st !==  "string" ? console.log("good"):console.log("bad");
+st !== "string" ? console.log("good") : console.log("bad");
 // fifth
-st.replace("Elzero web school","number") ===  "number" ? console.log("good"):console.log("bad");
+st.replace("Elzero web school", "number") === "number"
+  ? console.log("good")
+  : console.log("bad");
 //sixth
-st.replace(" web school","Elzero")==="ElzeroElzero"? console.log("good"):console.log("bad");
+st.replace(" web school", "Elzero") === "ElzeroElzero"
+  ? console.log("good")
+  : console.log("bad");
+
+// switch statment challnge;
+let job = "Designer";
+let salary = 0;
+
+switch (job) {
+  case "Manger":
+    salary = 8000;
+    console.log(`im a manger ${salary}`);
+    break;
+  case "IT":
+  case "Support":
+    salary = 6000;
+    console.log(`im IT man ${salary}`);
+    break;
+  case "Developer":
+  case "Designer":
+    salary = 7000;
+    console.log(`im dev man ${salary}`);
+    break;
+  default:
+    salary = 4000;
+    console.log(`im  man !!!! ${salary}`);
+    break;
+}
+
+let money =0;
+let holidays = 0;
+
+if(holidays == 0.5){
+  money =5000;
+  console.log(`${money}`);
+
+}if (holidays == 1 || holidays == 2) {
+  money =4500;
+  console.log(`${money}`);
+} if (holidays == 3 || holidays ==4) {
+  money =3500;
+  console.log(`${money}`);
+} else {
+  money =5500;
+  console.log(`${money}`);
+} 
 console.log("______________________ end _____________________");
 /**
- * 
- * 
+ *
+ *
  */
