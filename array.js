@@ -3,7 +3,7 @@ console.log(` hello from array file `);
  * array challenge
  */
 console.log(`_______________________ array file __________________________ `);
-
+console.log("________ array lessons");
 // Challenge Array
 let zero = 0;
 let counter = 3;
@@ -25,7 +25,8 @@ let ao = r + o;
 let fo = my.unshift(ao);
 console.log(my.slice(--zero, ++zero));
 
-//
+// for loop lessons
+console.log("________ for loop lessons");
 let products = ["keybard", "mouse", "pen", "book", "pad", "iphon", "samsung"];
 let colors = ["red", "green", "black"];
 let showCount = 5;
@@ -41,3 +42,11 @@ for (let i = 0; i < showCount; i++) {
   document.write(`<p>${colors.join(" | ")}`);
   document.write(`</div>`);
 }
+console.log("________ while loop lessons");
+
+
+
+
+document.write(`<hr>`);
+document.write(`this is the end of file array.js`);
+document.write(`<hr>`);
