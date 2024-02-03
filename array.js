@@ -42,10 +42,46 @@ for (let i = 0; i < showCount; i++) {
   document.write(`<p>${colors.join(" | ")}`);
   document.write(`</div>`);
 }
-console.log("________ while loop lessons");
+console.log("________  loop challenge");
 
+let myAdmin = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+let myEmployees = [
+  "Amgad",
+  "Samah",
+  "Ameer",
+  "Omar",
+  "Othman",
+  "Amany",
+  "Samia",
+  "Anwar",
+  "SOSO","Oroma"
+];
 
+document.write(`<hr>`);
+document.write(`<h1>loop challenge</h1>`);
+document.write(`<hr>`);
 
+//frist challenge get admins name while stop word;
+let i = 0;
+for (; i < myAdmin.length; i++) {
+  if (myAdmin[i] === "Stop") break;
+}
+document.write(`<div>We Have ${i} Admins </div>`);
+
+for (i = 0; i < myAdmin.length; i++) {
+  document.write(`<div>`);
+  if (myAdmin[i] === "Stop") break;
+
+  document.write(`The Admin for Team ${i + 1} is ${myAdmin[i]}`);
+  document.write(`"<h3>Team Members </h3>`);
+
+  for (let j = 0; j < myEmployees.length; j++) {
+    if (myEmployees[j][0] !== myAdmin[i][0]) continue;
+    document.write(`<p> ${myEmployees[j]}</p>`);
+  }
+  document.write(`</div>`);
+  document.write(`<hr>`);
+}
 
 document.write(`<hr>`);
 document.write(`this is the end of file array.js`);
