@@ -10,4 +10,11 @@ h3 {
 
 hr {
   font-weight: bold;
+}
+
+.links {
+  width: 100%;
+}
+.links ul {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
