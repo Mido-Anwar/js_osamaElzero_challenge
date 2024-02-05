@@ -11,7 +11,7 @@ function calc(...numbers) {
 }
 console.log(calc(10, 11, 33, 44, 22, 55, 66));
 
-// function challenge
+// function challenge 1
 
 function randomx(a, b, c) {
   let name;
@@ -19,7 +19,7 @@ function randomx(a, b, c) {
   let status;
   let arr = [];
   arr.push(a, b, c);
-  console.log(arr);
+
   for (let i = 0; i < arr.length; i++) {
     typeof arr[i] == "string"
       ? (name = arr[i])
@@ -27,9 +27,7 @@ function randomx(a, b, c) {
       ? (age = arr[i])
       : typeof arr[i] == "boolean"
       ? (status = arr[i])
-      : "   ";
-
-    console.log(arr[i]);
+      : "#######";
   }
 
   return `Hello  ${name}, Your age is ${age} ,you are ${
@@ -39,7 +37,31 @@ function randomx(a, b, c) {
 console.log(randomx(true, 12, "mido"));
 console.log(randomx("koko", 12, true));
 console.log(randomx(66, true, "dodo"));
-console.log(randomx(false, "lolo", 12))
-document.write(`<hr>`);
-document.write(`this is the end of file function.js`);
-document.write(`<hr>`);
+console.log(randomx(false, "lolo", 12));
+// arrow function challenge
+
+// let names = function (...names) {
+//   return `String [${names.join("],[")}] => Done`;
+// };
+// same up function
+let names = (...names) => `String [${names.join("],[")}] => Done !`;
+console.log(names("mido", "koko", "lili", "sisi", "wawa"));
+// scond challenge
+let numbers = [20, 50, 10, 60];
+// that salotion bad but is no another answer else.
+//let calculator = (one, two, ...nums) => `${parseInt(nums) + one + two}`;
+/**
+ * 
+ * another salotion for calc function osama elzero challenges; 
+ */
+function calculator(one, two = 0, ...nums) {
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === 20) {
+      two = numbers[i];
+    } else if (numbers[i] === 50) {
+      nums = numbers[i];
+    }
+  }
+  return one + two + nums;
+}
+console.log(calculator(10, 0, numbers));

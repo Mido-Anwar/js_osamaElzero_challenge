@@ -17,4 +17,7 @@ hr {
 }
 .links ul {
   width: 50%;
+}
+.links ul a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
