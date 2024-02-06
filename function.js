@@ -51,8 +51,8 @@ let numbers = [20, 50, 10, 60];
 // that salotion bad but is no another answer else.
 //let calculator = (one, two, ...nums) => `${parseInt(nums) + one + two}`;
 /**
- * 
- * another salotion for calc function osama elzero challenges; 
+ *
+ * another salotion for calc function osama elzero challenges;
  */
 function calculator(one, two = 0, ...nums) {
   for (let i = 0; i < numbers.length; i++) {
@@ -65,3 +65,18 @@ function calculator(one, two = 0, ...nums) {
   return one + two + nums;
 }
 console.log(calculator(10, 0, numbers));
+
+let hash = "mido1988anwar";
+
+let filterhash = hash
+  .split("")
+  .filter(function (ele) {
+    return !isNaN(ele);
+  })
+  .map(function (ele) {
+    return ele * ele;
+  })
+  .join(" ");
+
+console.log(filterhash);
+
