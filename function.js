@@ -1,5 +1,18 @@
 console.log("________  functions  challenge ______________________________");
-console.log("________  ____________________ ");
+
+let list = document.querySelectorAll("ul li");
+let allDivs = document.querySelectorAll(".content div");
+list.forEach((ele) => {
+  ele.onclick = function () {
+    list.forEach(function (ele) {
+      ele.classList.remove("active");
+    });
+    this.classList.add("active");
+    allDivs.forEach(function (ele) {
+      ele.style.display = "none";
+    });
+  };
+});
 
 function calc(...numbers) {
   let result = 0;
@@ -79,4 +92,41 @@ let filterhash = hash
   .join(" ");
 
 console.log(filterhash);
+let myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+// let finalnums = myNums.reduce(function (acc, curennt, index, arr) {
+//  return acc + curennt;
+
+// });
+
+// console.log(finalnums);
+
+/// higher function challenge;
+let mystring = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,z";
+// retrive Elzero web school from myString var;
+let solution = mystring
+  .split(",")
+  .map(function (ele, index, arr) {
+    return ele === "_" ? " " : ele;
+  })
+
+  .filter(function (ele, index, arr) {
+    return isNaN(parseInt(ele)) ? ele : "";
+  })
+  .reduce(function (acc, curennt, index, arr) {
+    arr.length = arr.length--;
+
+    let name = acc + curennt;
+    return name;
+  }).slice(true);
+  //* from you tube 
+// let solution = mystring
+//   .split(",");
+// .filter((ele) => isNaN(Number.parseInt(ele)))
+// .map((ele, ind, arr) => {
+//   arr.length = arr.length--;
+//   return ele.replace("_", " ");
+// })
+// .reduce((acc, ele, index, arr) => acc + ele)
+// .slice(true);
+console.log(solution);

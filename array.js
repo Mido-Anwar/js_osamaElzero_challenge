@@ -3,7 +3,7 @@ console.log(` hello from array file `);
  * array challenge
  */
 console.log(`_______________________ array file __________________________ `);
-console.log("________ array lessons");
+console.log("_______________________ array lessons _________________________");
 // Challenge Array
 let zero = 0;
 let counter = 3;
