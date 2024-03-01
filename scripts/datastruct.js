@@ -58,7 +58,9 @@ console.log("*".repeat(50));
 
 let n1 = [10,30,10,20];
 let n2 = [30,20,10];
-
+// this saloution from youtube
+console.log([...n1, ...n2].length * Math.max(...n2));
+// this mine but bad
 console.log([...new Set([...n2,...n1])].shift() * 7);
 
 
