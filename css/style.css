@@ -88,4 +88,12 @@ body {
   color: aliceblue;
   padding: 10px;
   border-radius: 5px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

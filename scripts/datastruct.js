@@ -35,9 +35,9 @@ console.log(checkValue(arr, "mido"));
 //################################
 console.log("#".repeat(10));
 let range = {
-    min: 10,
-    max: 20,
-  };
+  min: 10,
+  max: 20,
+};
 let checkRange = arr.some(function (e) {
   return e >= this.min && e <= this.max;
 }, range);
@@ -48,19 +48,84 @@ console.log("#".repeat(10));
 console.log([..."mido"]);
 
 let arr1 = [1, 2, 3, 4, 5];
-let arr2 =  [6, 7, 8, 9, 10];
-let arr3 = [...arr1,...arr2];
+let arr2 = [6, 7, 8, 9, 10];
+let arr3 = [...arr1, ...arr2];
 console.log(arr3);
 /**
  *  Map and Set challenge;
  */
 console.log("*".repeat(50));
 
-let n1 = [10,30,10,20];
-let n2 = [30,20,10];
+let n1 = [10, 30, 10, 20];
+let n2 = [30, 20, 10];
 // this saloution from youtube
 console.log([...n1, ...n2].length * Math.max(...n2));
 // this mine but bad
-console.log([...new Set([...n2,...n1])].shift() * 7);
+console.log([...new Set([...n2, ...n1])].shift() * 7);
 
+console.log("*".repeat(50));
+console.log("regular expression");
+console.log("*".repeat(50));
+
+let gomla = "mido anwar has an apple and an orange Apple";
+let dom = "com org net info io";
+let reg = /apple/gi;
+let domreg = /(com|org|net)/gi;
+let regnum = "12345678910";
+let numreg = /[0-9]/g;
+// not
+let notnum = "12345678910";
+let numnot = /[^0-3]/g;
+let charnum = "12#34%56*7&89@10";
+let numchar = /[^0-9]/g;
+let strreg =
+  "mido88@hot.com kiki99@yahoo.com mido88@gmail.net lolo66@cici.org ahmedzaki@cima.net nono@gigi.info";
+let regstr = /mido[0-9]/g;
+let url = "https://www.mido.net http://kiki.org www.ahmed.com";
+/**
+ * flags modifires
+ * ! i case insensitive
+ * * g global
+ * ? multilines
+ */
+console.log(gomla.match(reg));
+console.log(dom.match(domreg));
+console.log(regnum.match(numreg));
+console.log(notnum.match(numnot));
+console.log(charnum.match(numchar));
+console.log(strreg.match(regstr));
+/**
+ * Character Classes;
+ * capital Character == not
+ * ? \d \D digit
+ * ? \w  \W word or char
+ * ? \b \B begging or end
+ * ? \s space
+ */ 
+/**
+ * Quantifires
+ * ! * zero or more
+ * ! + one or more
+ * ! ? zero or one
+ * 
+ * ? test
+ * ! ^ start with something
+ * ! $ end with something
+ * ! ?= followed by somthing
+ * ! ?! not followed by somthing
+ *
+ */
+let dot = /./g;
+let word = /\w@\w/g;
+let digit = /\d/g;
+let bee = /\bmido/g;
+//let email = /\w+\d*@\w+.\w+/g;
+let email = /\w+\d?@\w+.\w+/g;
+let regurl = /(http\w?:\/\/)?(www.)?\w+.(com|org|net)/g;
+//console.log(strreg.match(dot));
+console.log(strreg.match(word));
+console.log(strreg.match(bee));
+console.log(bee.test(strreg));
+console.log(strreg.match(email));
+console.log(url.match(regurl));
 
