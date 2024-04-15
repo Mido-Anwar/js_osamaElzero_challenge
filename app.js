@@ -1,6 +1,6 @@
 // import mido, {a,b} from './scripts/modules.js';
 // import all props
-import * as all from './scripts/modules.js';
+import * as all from "./scripts/modules.js";
 
-console.log(a +b);
-console.log(mido());
+console.log(all.a + all.b);
+console.log(all.default());
