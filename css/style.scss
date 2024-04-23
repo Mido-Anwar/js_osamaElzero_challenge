@@ -9,7 +9,11 @@ h3 {
 hr {
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+  color: aliceblue;
 
+}
 .links {
   width: 100%;
   ul {
@@ -24,6 +28,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: rgb(40, 40, 202);
+  color: aliceblue;
 }
 .colors {
   width: 50%;
